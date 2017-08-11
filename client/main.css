@@ -1,0 +1,38 @@
+html,
+body {
+  height: 100%;
+  background: #bdc3c7;
+}
+
+body {
+    margin: 0;
+    font: 600 16px 'Raleway', sans-serif;
+}
+
+
+.page-header {
+   font-size: 40px;
+   padding-top: 40px;
+}
+
+#note {
+    font-size: 15px;
+    color: #5D6D7E;
+}
+
+.cards {
+    background-color: #EEEFF0;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 40em;
+    height: 7em;
+    padding-top: 13px;
+    padding-left: 7px;
+    padding-right: 7px;
+    font-size: 13px;
+    display: block; 
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    line-height: 1.3em;
+}

@@ -1,0 +1,27 @@
+<template name="home">
+    <div  class="container app">
+     <div class="row">
+          
+          <div class="col-xs-8 col-xs-offset-2">
+                <h4 class="page-header">Shorten a URL!</h4>
+                {{#autoForm id="afInsertLink" type="insert" collection="Links"}}
+                <div class="row">
+                <div class="col-xs-10 {{#if afFieldIsInvalid name='url'}}has-error{{/if}}">
+                  {{> afFieldInput name='url' class="url-to-shorten"}}
+                  <span id="note">Make sure to specify the communication protocol (i.e. https:// or http://)</span>
+                  {{#if afFieldIsInvalid name='url'}}
+                  <span class="help-block">{{{afFieldMessage name='url'}}}</span>
+                  {{/if}}
+                </div>
+                <div class="col-xs-2">
+                  <button type="submit" class="btn shorten">SHORTEN</button>
+                </div>
+                </div>
+              {{/autoForm}}
+              {{> panel }}
+                 
+              </div>
+      </div>  
+    </div>
+</template>
+

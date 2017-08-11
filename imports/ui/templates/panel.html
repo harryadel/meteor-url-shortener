@@ -1,0 +1,12 @@
+<template name="panel">
+  {{#if Template.subscriptionsReady }}
+                 {{#each links}}
+                 <div class="cards">
+                 <p><a href="{{ encodedUrl }}" target="_blank" >{{ encodedUrl }}</a></p>
+                 <p><a href="{{ url }}" target="_blank" >{{ url }}</a></p>
+                 </div>
+                 {{/each}}
+                 {{else}}
+                 <p>Loading</p>
+                 {{/if}}
+</template>
